@@ -8,7 +8,7 @@ RUN rm -rf ./*
 
 # Copy the HTML file and all supporting files to nginx html directory
 COPY index.html ./index.html
-COPY "E-Sport Club Management System_files" "./E-Sport Club Management System_files"
+COPY ./esport-png/ ./esport-png/
 
 # Create a custom nginx configuration (optional)
 # COPY nginx.conf /etc/nginx/nginx.conf
