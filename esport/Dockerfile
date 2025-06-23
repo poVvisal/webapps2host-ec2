@@ -6,8 +6,9 @@ WORKDIR /usr/share/nginx/html
 # Remove default nginx files
 RUN rm -rf ./*
 
-# Copy the HTML file to nginx html directory
+# Copy the HTML file and all supporting files to nginx html directory
 COPY index.html ./index.html
+COPY "E-Sport Club Management System_files" "./E-Sport Club Management System_files"
 
 # Create a custom nginx configuration (optional)
 # COPY nginx.conf /etc/nginx/nginx.conf
